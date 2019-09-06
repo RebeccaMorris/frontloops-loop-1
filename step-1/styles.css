@@ -1,0 +1,127 @@
+/***********************/
+/* Base                */
+/***********************/
+
+body {
+  font: 1rem/1.5 'Roboto', sans-serif;
+}
+
+h2 {
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: #5d72cd;
+}
+
+
+/***********************/
+/* Main                */
+/***********************/
+
+.platforms {
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.platforms div {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.description {
+  color: #a7a8aa;
+}
+
+.price {
+  color: #5d72cd;
+}
+
+.price::first-letter {
+  font-size: 1.2rem;
+  font-weight: bold;
+  vertical-align: 1.1rem;
+}
+
+.price span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+/***********************/
+/* Layout              */
+/***********************/
+
+.platforms {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.platforms div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.platforms img {
+  width: 85px;
+  margin: 0 auto;
+  order: -1;
+}
+
+.platforms h2 {
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+.price {
+  margin-top: 0;
+}
+
+
+/***********************/
+/* Media Queries       */
+/***********************/
+
+@media (min-width: 768px) {
+
+  body {
+    background-color: #8ca4d1;
+  }
+
+  .platforms {
+    display: flex;
+    justify-content: space-around;
+    margin: 200px auto 0;
+    padding: 25px;
+    box-shadow: 0 10px 25px -4px rgba(0, 0, 0, .3);
+  }
+
+  .platforms div {
+    flex-basis: 325px;
+    flex-grow: 0;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 15px;
+  }
+
+  .platforms div:hover {
+    background-color: #fbfbfc;
+  }
+
+  .platforms p {
+    max-width: 250px;
+  }
+
+  .price {
+    margin: 0;
+  }
+
+}
