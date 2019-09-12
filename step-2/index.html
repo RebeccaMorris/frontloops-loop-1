@@ -6,9 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Loop 1 - Step 2</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  
+  <section class="card">
+    <h2>Payment Method</h2>
+
+    <ul class="dots">
+      <li><button type="button" class="selected"></button></li>
+      <li><button type="button"></button></li>
+      <li><button type="button"></button></li>
+    </ul>
+
+    <ul class="payment-method">
+      <li><img src="img/visa.svg" alt="Visa Logo" class="payment-method-logo">Visa</li>
+      <li class="selected"><img src="img/mastercard.svg" alt="Mastercard Logo" class="payment-method-logo selected">Mastercard</li>
+      <li><img src="img/maestro.svg" alt="Maestro Logo" class="payment-method-logo">Maestro</li>
+    </ul>
+
+    <button class="next">Next Step</button>
+  </section>
 </body>
 </html>
