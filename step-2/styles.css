@@ -1,0 +1,132 @@
+body {
+  background: #212a29 url('img/background.jpg') no-repeat fixed;
+  background-size: cover;
+  font: 1rem 'Roboto', sans-serif;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 350px;
+  margin: 150px auto;
+  border-radius: 5px;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2),
+              0 8px 20px rgba(14,21,47, .2);
+  background-color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.dots {
+  order: -1;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.dots li {
+  display: inline-block;
+  padding: 0 1px;
+}
+
+.dots button {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  padding: 0;
+  background-color: #dedede;
+  border: none;
+  border-radius: 50%;
+}
+
+.dots .selected {
+  background-color: #aaa;
+}
+
+.payment-method {
+  padding-left: 0;
+  margin: 5px 0 0;
+  text-align: left;
+  color: #aaa;
+}
+
+.payment-method li {
+  cursor: pointer;
+  padding: 18px 15px 15px 30px;
+  border-top: 1px solid #dedede;
+  font-size: .9rem;
+}
+
+.payment-method li:hover {
+  background-color: #f2f1f2;
+}
+
+.payment-method .selected {
+  position: relative;
+  color: #000;
+}
+
+.payment-method .selected::after {
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 1.3rem;
+  right: 1.1rem;
+  width: 1rem;
+  height: 1rem;
+  background: no-repeat url('img/check.svg') center;
+}
+
+.payment-method-logo {
+  height: 26px;
+  margin: -.1rem 25px 0 0;
+  vertical-align: middle;
+}
+
+.next {
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #598bdd;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.next:hover {
+  transition: background-color .15s ease-in-out;
+  background-color: #558ef3;
+}
+
+.next:focus {
+  outline: 0;
+}
+
+.next:active {
+  transform: translateY(1px);
+}
+
+.next::after {
+  content: '';
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  background: no-repeat url('img/arrow.svg') center/15px;
+  vertical-align: bottom;
+}
